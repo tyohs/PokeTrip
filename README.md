@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PokeTrip
 
-## Getting Started
+> **Status: 未完成の学習用アーカイブ（開発終了）**
 
-First, run the development server:
+PokeTripは、旅行とポケモンを組み合わせたWebアプリの着想から作成されたリポジトリです。ただし、現時点のコードは `create-next-app` が生成した初期テンプレートのみで、PokeTrip固有の画面、データモデル、API連携などは実装されていません。
+
+完成したプロダクトやポートフォリオ作品として誤解されないよう、このリポジトリは「Next.jsプロジェクトを作成した段階の学習記録」として公開しています。新規開発のベースにはせず、実装を再開する場合は要件定義から新しいリポジトリで始めることを推奨します。
+
+## 現在含まれるもの
+
+- Next.js 15 App Routerの初期構成
+- React 19、TypeScript、Tailwind CSS 4
+- ESLint、型検査、production buildを確認するGitHub Actions
+
+PokeTrip固有の機能、外部API、データベース、認証、テストはありません。APIキーなどの環境変数も不要です。
+
+## ローカルで確認する
+
+Node.js 20以上を使用します。
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000) を開くと、Next.jsの初期画面が表示されます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 検証
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
 
-## Learn More
+## 今後について
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+このリポジトリでは機能追加を予定していません。アイデアを再開する場合は、対象ユーザー、提供価値、利用する位置情報・コンテンツAPIとその利用規約を整理してから、別プロジェクトとして設計し直します。
